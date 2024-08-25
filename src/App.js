@@ -24,7 +24,7 @@ const App = () => {
                 return '';
             }).join('&');
 
-            const response = await fetch(`http://127.0.0.1:5000/bfhl?${queryParams}`, {
+            const response = await fetch(`https://testbackend-czov0er0a-aritras-projects-5dcb59c4.vercel.app/bfhl?${queryParams}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(parsedData),
